@@ -1,0 +1,92 @@
+- generic [ref=f4e5]:
+  - heading "Campeonato Relampago" [level=1] [ref=f4e6]
+  - paragraph [ref=f4e7]: Doble Eliminacion - Modo Campal
+  - generic [ref=f4e9]:
+    - generic [ref=f4e10]:
+      - heading "Llave Principal" [level=2] [ref=f4e11]
+      - generic [ref=f4e12]:
+        - generic [ref=f4e13]:
+          - generic [ref=f4e14]:
+            - generic [ref=f4e15]: Ronda 1A
+            - generic [ref=f4e17]:
+              - generic [ref=f4e18]:
+                - img "System Fit" [ref=f4e20]
+                - generic [ref=f4e21]: System Fit
+                - generic [ref=f4e22]: "3"
+              - generic [ref=f4e23]:
+                - img "Mirre Team" [ref=f4e25]
+                - generic [ref=f4e26]: Mirre Team
+                - generic [ref=f4e27]: "1"
+          - generic [ref=f4e28]:
+            - generic [ref=f4e29]: Ronda 1B
+            - generic [ref=f4e31]:
+              - generic [ref=f4e32]:
+                - img "Los malditos de San Juan" [ref=f4e34]
+                - generic [ref=f4e35]: Los malditos de San Juan
+                - generic [ref=f4e36]: "2"
+              - generic [ref=f4e37]:
+                - img "La Maldicion de los españoles" [ref=f4e39]
+                - generic [ref=f4e40]: La Maldicion de los españoles
+                - generic [ref=f4e41]: "4"
+        - generic [ref=f4e45]:
+          - generic [ref=f4e46]: Final Ganadores
+          - generic [ref=f4e48]:
+            - generic [ref=f4e49]:
+              - img "System Fit" [ref=f4e51]
+              - generic [ref=f4e52]: System Fit
+              - generic [ref=f4e53]: "1"
+            - generic [ref=f4e54]:
+              - img "La Maldicion de los españoles" [ref=f4e56]
+              - generic [ref=f4e57]: La Maldicion de los españoles
+              - generic [ref=f4e58]: "2"
+        - generic [ref=f4e61]:
+          - generic [ref=f4e62]:
+            - generic [ref=f4e63]: Gran Final
+            - generic [ref=f4e65]:
+              - generic [ref=f4e66] [cursor=pointer]:
+                - heading "Mirre Team" [level=3] [ref=f4e70]
+                - generic [ref=f4e71]: "2"
+              - generic [ref=f4e72]: VS
+              - generic [ref=f4e73] [cursor=pointer]:
+                - heading "La Maldicion de los españoles" [level=3] [ref=f4e77]
+                - generic [ref=f4e78]: "4"
+          - generic [ref=f4e79]:
+            - generic [ref=f4e80]: Campeon
+            - img "Copa del Campeonato"
+            - paragraph [ref=f4e81]: Esperando campeon...
+    - generic [ref=f4e82]:
+      - generic [ref=f4e83]:
+        - generic [ref=f4e84]: Perdedor M1
+        - generic [ref=f4e86]: ↓
+      - generic [ref=f4e87]:
+        - generic [ref=f4e88]: Perdedor M2
+        - generic [ref=f4e90]: ↓
+    - generic [ref=f4e91]:
+      - heading "Llave de Repechaje" [level=2] [ref=f4e92]
+      - generic [ref=f4e93]:
+        - generic [ref=f4e94]:
+          - generic [ref=f4e95]: Repechaje
+          - generic [ref=f4e97]:
+            - generic [ref=f4e98]:
+              - img "Mirre Team" [ref=f4e100]
+              - generic [ref=f4e101]: Mirre Team
+              - generic [ref=f4e102]: "5"
+            - generic [ref=f4e103]:
+              - img "Los malditos de San Juan" [ref=f4e105]
+              - generic [ref=f4e106]: Los malditos de San Juan
+              - generic [ref=f4e107]: "2"
+        - generic [ref=f4e110]:
+          - generic [ref=f4e111]: Retador
+          - generic [ref=f4e113]:
+            - generic [ref=f4e114]:
+              - img "Mirre Team" [ref=f4e116]
+              - generic [ref=f4e117]: Mirre Team
+              - generic [ref=f4e118]: "3"
+            - generic [ref=f4e119]:
+              - img "Roba Rabo" [ref=f4e121]
+              - generic [ref=f4e122]: Roba Rabo
+              - generic [ref=f4e123]: "0"
+        - generic [ref=f4e124]:
+          - generic [ref=f4e125]: Ganador
+          - generic [ref=f4e126]: ↑
+          - generic [ref=f4e127]: sube a Gran Final

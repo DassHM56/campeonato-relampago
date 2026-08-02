@@ -1,0 +1,52 @@
+- generic [ref=e5]:
+  - heading "Campeonato Relampago" [level=1] [ref=e6]
+  - paragraph [ref=e7]: Bracket de Eliminacion
+  - generic [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Ronda 1
+        - generic [ref=e17]:
+          - generic [ref=e18] [cursor=pointer]:
+            - heading "Roba Rabo" [level=3] [ref=e22]
+            - generic [ref=e23]: "5"
+          - generic [ref=e24]: VS
+          - generic [ref=e25] [cursor=pointer]:
+            - heading "La Maldicion de los españoles" [level=3] [ref=e29]
+            - generic [ref=e30]: "4"
+      - generic [ref=e31]:
+        - generic [ref=e32]: Cuartos
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: ⚽
+            - generic [ref=e40]: Esperando rival...
+          - generic [ref=e41]: VS
+          - generic [ref=e42] [cursor=pointer]:
+            - heading "Los malditos de San Juan" [level=3] [ref=e46]
+            - generic [ref=e47]: "3"
+            - generic [ref=e48]: ESPERA
+      - generic [ref=e49]:
+        - generic [ref=e50]: Semifinal
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: ⚽
+            - generic [ref=e58]: Esperando rival...
+          - generic [ref=e59]: VS
+          - generic [ref=e60] [cursor=pointer]:
+            - heading "Mirre Team" [level=3] [ref=e64]
+            - generic [ref=e65]: "2"
+            - generic [ref=e66]: ESPERA
+      - generic [ref=e67]:
+        - generic [ref=e68]: Final
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: ⚽
+            - generic [ref=e76]: Esperando rival...
+          - generic [ref=e77]: VS
+          - generic [ref=e78] [cursor=pointer]:
+            - heading "System Fit" [level=3] [ref=e82]
+            - generic [ref=e83]: "1"
+            - generic [ref=e84]: ESPERA
+    - generic [ref=e85]:
+      - generic [ref=e86]: Campeon
+      - img "Copa del Campeonato" [ref=e87]
+      - paragraph [ref=e88]: Esperando campeon...

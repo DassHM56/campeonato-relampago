@@ -1,0 +1,18 @@
+- generic [ref=f1e16]:
+  - banner [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - heading "Panel de Administrador" [level=1] [ref=f1e19]
+      - button "Cerrar sesión" [ref=f1e20] [cursor=pointer]
+    - navigation [ref=f1e21]:
+      - generic [ref=f1e22]:
+        - button "Verificador DNI" [ref=f1e23] [cursor=pointer]
+        - button "Equipos" [ref=f1e24] [cursor=pointer]
+        - button "Jugadores" [ref=f1e25] [cursor=pointer]
+        - button "Fixture y Partidos" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e29]:
+      - heading "Verificador de DNI" [level=2] [ref=f1e30]
+      - paragraph [ref=f1e31]: Mesa de control - Verificación rápida de jugadores
+      - generic [ref=f1e32]:
+        - textbox "Ingrese DNI (8 dígitos)" [ref=f1e33]
+        - button "Verificar Jugador" [disabled] [ref=f1e34]

@@ -1,0 +1,23 @@
+- generic [ref=f1e16]:
+  - banner [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - heading "Panel de Administrador" [level=1] [ref=f1e19]
+      - button "Cerrar sesión" [ref=f1e20] [cursor=pointer]
+    - navigation [ref=f1e21]:
+      - generic [ref=f1e22]:
+        - button "Verificador DNI" [ref=f1e23] [cursor=pointer]
+        - button "Equipos" [ref=f1e24] [cursor=pointer]
+        - button "Jugadores" [ref=f1e25] [cursor=pointer]
+        - button "Fixture y Partidos" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e36]:
+      - heading "Gestión de Partidos" [level=2] [ref=f1e38]
+      - paragraph [ref=f1e91]: Fixture completamente reseteado
+      - generic [ref=f1e40]:
+        - heading "No hay partidos creados" [level=3] [ref=f1e92]
+        - generic [ref=f1e93]:
+          - generic [ref=f1e94]: Modo de Torneo
+          - combobox [ref=f1e95]:
+            - option "Modo Escalonado (Stepladder)" [selected]
+            - option "Modo Campal (Clasico + Repechaje)"
+        - button "Inicializar Fixture del Torneo" [ref=f1e96] [cursor=pointer]

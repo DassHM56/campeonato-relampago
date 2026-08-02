@@ -1,0 +1,52 @@
+- generic [ref=e5]:
+  - heading "Campeonato Relámpago" [level=1] [ref=e6]
+  - paragraph [ref=e7]: Bracket de Eliminación
+  - generic [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Ronda 1
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - img "La Maldicion de los españoles" [ref=e20]
+            - generic [ref=e21]: La Maldicion de los españoles
+            - generic [ref=e22]: "2"
+          - generic [ref=e23]:
+            - img "Roba Rabo" [ref=e25]
+            - generic [ref=e26]: Roba Rabo
+            - generic [ref=e27]: "1"
+      - generic [ref=e28]:
+        - generic [ref=e29]: Cuartos
+        - generic [ref=e33]:
+          - generic [ref=e34] [cursor=pointer]:
+            - heading "La Maldicion de los españoles" [level=3] [ref=e38]
+            - generic [ref=e39]: "4"
+          - generic [ref=e40]: VS
+          - generic [ref=e41] [cursor=pointer]:
+            - heading "Los malditos de San Juan" [level=3] [ref=e45]
+            - generic [ref=e46]: "3"
+      - generic [ref=e47]:
+        - generic [ref=e48]: Semifinal
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: ⚽
+            - generic [ref=e56]: Esperando rival...
+          - generic [ref=e57]: VS
+          - generic [ref=e58] [cursor=pointer]:
+            - heading "Mirre Team" [level=3] [ref=e62]
+            - generic [ref=e63]: "2"
+            - generic [ref=e64]: ESPERA
+      - generic [ref=e65]:
+        - generic [ref=e66]: Final
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: ⚽
+            - generic [ref=e74]: Esperando rival...
+          - generic [ref=e75]: VS
+          - generic [ref=e76] [cursor=pointer]:
+            - heading "System Fit" [level=3] [ref=e80]
+            - generic [ref=e81]: "1"
+            - generic [ref=e82]: ESPERA
+    - generic [ref=e83]:
+      - generic [ref=e84]: Campeon
+      - img "Copa del Campeonato" [ref=e85]
+      - paragraph [ref=e86]: Esperando campeon...

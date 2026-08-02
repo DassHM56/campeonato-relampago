@@ -1,0 +1,72 @@
+- generic [ref=f3e3]:
+  - banner [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - heading "Panel de Administrador" [level=1] [ref=f3e6]
+      - button "Cerrar sesión" [ref=f3e7] [cursor=pointer]
+    - navigation [ref=f3e8]:
+      - generic [ref=f3e9]:
+        - button "Verificador DNI" [ref=f3e10] [cursor=pointer]
+        - button "Equipos" [ref=f3e11] [cursor=pointer]
+        - button "Jugadores" [ref=f3e12] [cursor=pointer]
+        - button "Fixture y Partidos" [ref=f3e13] [cursor=pointer]
+  - main [ref=f3e14]:
+    - generic [ref=f3e23]:
+      - generic [ref=f3e24]:
+        - heading "Gestión de Partidos" [level=2] [ref=f3e25]
+        - button "⚠️ Resetear Todo el Torneo" [ref=f3e26] [cursor=pointer]
+      - paragraph [ref=f3e92]: Resultado guardado correctamente
+      - generic [ref=f3e27]:
+        - generic [ref=f3e28]:
+          - generic [ref=f3e29]:
+            - generic [ref=f3e30]: Cuartos
+            - generic [ref=f3e31]: Finalizado
+          - generic [ref=f3e32]:
+            - paragraph [ref=f3e34]: La Maldicion de los españoles
+            - spinbutton "-" [disabled] [ref=f3e35]: "3"
+            - generic [ref=f3e36]: vs
+            - spinbutton "-" [disabled] [ref=f3e37]: "1"
+            - paragraph [ref=f3e39]: Roba Rabo
+          - button "Limpiar Goles" [ref=f3e93] [cursor=pointer]
+          - paragraph [ref=f3e94]: Resultado finalizado
+        - generic [ref=f3e42]:
+          - generic [ref=f3e43]:
+            - generic [ref=f3e44]: Semi 2
+            - generic [ref=f3e45]: Por jugar
+          - generic [ref=f3e46]:
+            - paragraph [ref=f3e48]: Mirre Team
+            - spinbutton "-" [ref=f3e49]
+            - generic [ref=f3e50]: vs
+            - spinbutton "-" [ref=f3e51]
+            - paragraph [ref=f3e53]: Los malditos de San Juan
+          - button "Guardar Resultado" [ref=f3e55] [cursor=pointer]
+        - generic [ref=f3e56]:
+          - generic [ref=f3e57]:
+            - generic [ref=f3e58]: Semi 1
+            - generic [ref=f3e59]: Por jugar
+          - generic [ref=f3e60]:
+            - paragraph [ref=f3e62]: System Fit
+            - spinbutton "-" [ref=f3e63]
+            - generic [ref=f3e64]: vs
+            - spinbutton "-" [ref=f3e65]
+            - paragraph [ref=f3e67]: La Maldicion de los españoles
+          - button "Guardar Resultado" [ref=f3e96] [cursor=pointer]
+        - generic [ref=f3e68]:
+          - generic [ref=f3e69]:
+            - generic [ref=f3e70]: Tercer Puesto
+            - generic [ref=f3e71]: Por jugar
+          - generic [ref=f3e72]:
+            - paragraph [ref=f3e74]: Esperando rival
+            - spinbutton "-" [ref=f3e75]
+            - generic [ref=f3e76]: vs
+            - spinbutton "-" [ref=f3e77]
+            - paragraph [ref=f3e79]: Esperando rival
+        - generic [ref=f3e80]:
+          - generic [ref=f3e81]:
+            - generic [ref=f3e82]: Final
+            - generic [ref=f3e83]: Por jugar
+          - generic [ref=f3e84]:
+            - paragraph [ref=f3e86]: Esperando rival
+            - spinbutton "-" [ref=f3e87]
+            - generic [ref=f3e88]: vs
+            - spinbutton "-" [ref=f3e89]
+            - paragraph [ref=f3e91]: Esperando rival

@@ -1,0 +1,51 @@
+- generic [ref=e5]:
+  - heading "Campeonato Relámpago" [level=1] [ref=e6]
+  - paragraph [ref=e7]: Bracket de Eliminación
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]: Ronda 1
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - img "La Maldicion de los españoles" [ref=e16]
+          - generic [ref=e17]: La Maldicion de los españoles
+          - generic [ref=e18]: "2"
+        - generic [ref=e19]:
+          - img "Roba Rabo" [ref=e21]
+          - generic [ref=e22]: Roba Rabo
+          - generic [ref=e23]: "1"
+    - generic [ref=e27]:
+      - generic [ref=e28]: Cuartos
+      - generic [ref=e29]:
+        - generic [ref=e30] [cursor=pointer]:
+          - heading "La Maldicion de los españoles" [level=3] [ref=e34]
+          - generic [ref=e35]: "4"
+        - generic [ref=e36]: VS
+        - generic [ref=e37] [cursor=pointer]:
+          - heading "Los malditos de San Juan" [level=3] [ref=e41]
+          - generic [ref=e42]: "3"
+    - generic [ref=e46]:
+      - generic [ref=e47]: Semifinal
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: ⚽
+          - generic [ref=e52]: Esperando rival...
+        - generic [ref=e53]: VS
+        - generic [ref=e54] [cursor=pointer]:
+          - heading "Mirre Team" [level=3] [ref=e58]
+          - generic [ref=e59]: "2"
+          - generic [ref=e60]: ESPERA
+    - generic [ref=e64]:
+      - generic [ref=e65]: Final
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: ⚽
+          - generic [ref=e70]: Esperando rival...
+        - generic [ref=e71]: VS
+        - generic [ref=e72] [cursor=pointer]:
+          - heading "System Fit" [level=3] [ref=e76]
+          - generic [ref=e77]: "1"
+          - generic [ref=e78]: ESPERA
+    - generic [ref=e82]:
+      - generic [ref=e83]: Campeon
+      - img "Copa del Campeonato" [ref=e84]
+      - paragraph [ref=e85]: Esperando campeon...
