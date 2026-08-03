@@ -41,8 +41,7 @@ router.post('/', upload.single('logo'), (req, res) => {
     return res.status(400).json({ ok: false, error: 'No se recibio ningun archivo' });
   }
 
-  const baseUrl = `http://localhost:${process.env.PORT || 3001}`;
-  const fileUrl = `${baseUrl}/uploads/${req.file.filename}`;
+  const fileUrl = `/uploads/${req.file.filename}`;
 
   res.status(201).json({ ok: true, logo_url: fileUrl });
 });
