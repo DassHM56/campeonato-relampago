@@ -397,48 +397,59 @@ function LadderBracket({ equipos, partidos = [] }) {
       : null);
 
   return (
-    <div className="bg-[url('/fondo.jpg')] bg-cover bg-center bg-fixed min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-black/60" />
-      <FireParticles />
+    <div className="min-h-screen relative overflow-hidden bg-slate-900">
+      {/* Fondo fijo extendido que cubre todo el área scrolleable */}
+      <div
+        className="fixed inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('/fondo.jpg')", zIndex: 0 }}
+        aria-hidden="true"
+      />
+      <div className="fixed inset-0 bg-black/60" style={{ zIndex: 1 }} aria-hidden="true" />
 
-      <div className="relative z-10">
-        <motion.h1
-          className="text-center text-5xl md:text-6xl font-black mb-1 tracking-tight pt-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-blue-500"
-          style={{ filter: 'drop-shadow(0 0 15px rgba(34,211,238,0.8))' }}
-          animate={{ y: [-5, 5, -5] }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          Campeonato Relampago
-        </motion.h1>
-        <p className="text-center text-green-200 mb-4 text-lg">
-          {isCampal ? 'Doble Eliminacion - Modo Campal' : 'Bracket de Eliminacion'}
-        </p>
+      {/* Contenido scrolleable horizontalmente */}
+      <div
+        className="relative z-10 overflow-x-auto overflow-y-hidden"
+        style={{ WebkitOverflowScrolling: 'touch' }}
+      >
+        <div className="min-w-[900px]">
+          <div className="relative z-10">
+            <motion.h1
+              className="text-center text-5xl md:text-6xl font-black mb-1 tracking-tight pt-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-blue-500"
+              style={{ filter: 'drop-shadow(0 0 15px rgba(34,211,238,0.8))' }}
+              animate={{ y: [-5, 5, -5] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              Campeonato Relampago
+            </motion.h1>
+            <p className="text-center text-green-200 mb-4 text-lg">
+              {isCampal ? 'Doble Eliminacion - Modo Campal' : 'Bracket de Eliminacion'}
+            </p>
 
-        {isCampal ? (
-          <div className="w-full h-[calc(100vh-140px)] flex items-center justify-center overflow-hidden">
-            <div className="w-full h-full flex flex-col items-center justify-center transform scale-[0.78] origin-center">
-              <CampalLayout partidos={partidos} equipos={equipos} getEquipo={getEquipo} finalGanador={finalGanador} />
-            </div>
-          </div>
-        ) : (
-          <div className="overflow-x-auto">
-            <div className="flex items-center justify-center min-h-[85vh] px-6 gap-0">
-              <div className="bracket-container relative">
-                <Bracket
-                  rounds={escalonadoRounds}
-                  renderSeedComponent={CustomSeed}
-                  roundTitleComponent={(title) => (
-                    <span className="text-xs font-bold text-white/70 uppercase tracking-wider bg-white/10 px-4 py-1.5 rounded-full block text-center mb-4">
-                      {title}
-                    </span>
-                  )}
-                  mobileBreakpoint={0}
-                />
+            {isCampal ? (
+              <div className="w-full h-[calc(100vh-140px)] flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full flex flex-col items-center justify-center transform scale-[0.78] origin-center">
+                  <CampalLayout partidos={partidos} equipos={equipos} getEquipo={getEquipo} finalGanador={finalGanador} />
+                </div>
               </div>
-              <CopaContainer finalGanador={finalGanador} />
-            </div>
+            ) : (
+              <div className="flex items-center justify-center min-h-[calc(100vh-140px)] px-6 gap-0">
+                <div className="bracket-container relative">
+                  <Bracket
+                    rounds={escalonadoRounds}
+                    renderSeedComponent={CustomSeed}
+                    roundTitleComponent={(title) => (
+                      <span className="text-xs font-bold text-white/70 uppercase tracking-wider bg-white/10 px-4 py-1.5 rounded-full block text-center mb-4">
+                        {title}
+                      </span>
+                    )}
+                    mobileBreakpoint={0}
+                  />
+                </div>
+                <CopaContainer finalGanador={finalGanador} />
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
 
       <style>{`
