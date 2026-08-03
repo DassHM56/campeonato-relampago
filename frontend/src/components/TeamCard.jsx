@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { getFullImageUrl } from '../utils/imageUrl';
 import JugadoresModal from './JugadoresModal';
 
 function TeamCard({ equipo, esperando = false }) {
@@ -36,7 +37,7 @@ function TeamCard({ equipo, esperando = false }) {
         {equipo.logo_url ? (
           <div
             className="absolute inset-0 bg-cover bg-center transition-all duration-500 group-hover:scale-110"
-            style={{ backgroundImage: `url(${equipo.logo_url})` }}
+            style={{ backgroundImage: `url(${getFullImageUrl(equipo.logo_url)})` }}
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">

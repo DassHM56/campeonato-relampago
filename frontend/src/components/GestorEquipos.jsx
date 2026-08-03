@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import api from '../services/api';
+import { getFullImageUrl } from '../utils/imageUrl';
 import JugadoresModal from './JugadoresModal';
 
 function GestorEquipos() {
@@ -256,7 +257,7 @@ function GestorEquipos() {
                         <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
                           {eq.logo_url ? (
                             <img
-                              src={eq.logo_url}
+                              src={getFullImageUrl(eq.logo_url)}
                               alt={eq.nombre}
                               className="w-full h-full object-cover"
                             />

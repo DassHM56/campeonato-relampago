@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import api from '../services/api';
+import { getFullImageUrl } from '../utils/imageUrl';
 
 function JugadoresModal({ equipo, onClose }) {
   const [jugadores, setJugadores] = useState([]);
@@ -40,7 +41,7 @@ function JugadoresModal({ equipo, onClose }) {
                 <div className="w-10 h-10 rounded-full bg-white/20 overflow-hidden flex-shrink-0">
                   {equipo.logo_url ? (
                     <img
-                      src={equipo.logo_url}
+                      src={getFullImageUrl(equipo.logo_url)}
                       alt={equipo.nombre}
                       className="w-full h-full object-cover"
                     />

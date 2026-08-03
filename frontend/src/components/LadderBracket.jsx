@@ -3,6 +3,7 @@ import { Bracket, Seed, SeedItem } from 'react-brackets';
 import { AnimatePresence, motion } from 'framer-motion';
 import TeamCard from './TeamCard';
 import FireParticles from './FireParticles';
+import { getFullImageUrl } from '../utils/imageUrl';
 
 const NEON_CYAN = 'shadow-[0_0_8px_#22d3ee,0_0_16px_rgba(34,211,238,0.5)]';
 const NEON_RED = 'shadow-[0_0_8px_#ef4444,0_0_16px_rgba(239,68,68,0.4)]';
@@ -28,7 +29,7 @@ function ResultCard({ match, getEquipo }) {
       <div className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-full bg-white/10 overflow-hidden flex-shrink-0">
           {eq1?.logo_url ? (
-            <img src={eq1.logo_url} alt={eq1.nombre} className="w-full h-full object-cover" />
+            <img src={getFullImageUrl(eq1?.logo_url)} alt={eq1?.nombre} className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full bg-slate-700" />
           )}
@@ -43,7 +44,7 @@ function ResultCard({ match, getEquipo }) {
       <div className="flex items-center gap-2">
         <div className="w-8 h-8 rounded-full bg-white/10 overflow-hidden flex-shrink-0">
           {eq2?.logo_url ? (
-            <img src={eq2.logo_url} alt={eq2.nombre} className="w-full h-full object-cover" />
+            <img src={getFullImageUrl(eq2?.logo_url)} alt={eq2?.nombre} className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full bg-slate-700" />
           )}
@@ -84,7 +85,7 @@ function CopaContainer({ finalGanador }) {
           >
             <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-yellow-400 shadow-[0_0_25px_rgba(255,215,0,0.5)]">
               {finalGanador.logo_url ? (
-                <img src={finalGanador.logo_url} alt={finalGanador.nombre} className="w-full h-full object-cover" />
+                <img src={getFullImageUrl(finalGanador.logo_url)} alt={finalGanador.nombre} className="w-full h-full object-cover" />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-amber-500" />
               )}

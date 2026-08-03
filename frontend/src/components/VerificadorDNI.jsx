@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import api from '../services/api';
+import { getFullImageUrl } from '../utils/imageUrl';
 
 function VerificadorDNI() {
   const [dni, setDni] = useState('');
@@ -87,7 +88,7 @@ function VerificadorDNI() {
             <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden border-2 border-green-300 flex-shrink-0">
               {resultado.logo_url ? (
                 <img
-                  src={resultado.logo_url}
+                  src={getFullImageUrl(resultado.logo_url)}
                   alt={resultado.nombre_equipo}
                   className="w-full h-full object-cover"
                 />
