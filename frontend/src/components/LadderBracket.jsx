@@ -10,11 +10,11 @@ const NEON_RED = 'shadow-[0_0_8px_#ef4444,0_0_16px_rgba(239,68,68,0.4)]';
 
 function WaitingSlot({ label = 'Esperando rival...' }) {
   return (
-    <div className="w-48 h-64 rounded-2xl overflow-hidden bg-slate-900/60 backdrop-blur-md border-2 border-white/10 flex flex-col items-center justify-center gap-4">
-      <div className="w-24 h-24 rounded-full bg-white/5 flex items-center justify-center">
-        <span className="text-5xl text-white/20 font-bold">⚽</span>
+    <div className="w-40 h-52 md:w-44 md:h-56 lg:w-48 lg:h-60 rounded-2xl overflow-hidden bg-slate-900/60 backdrop-blur-md border-2 border-white/10 flex flex-col items-center justify-center gap-4">
+      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/5 flex items-center justify-center">
+        <span className="text-4xl md:text-5xl text-white/20 font-bold">⚽</span>
       </div>
-      <span className="text-white/50 text-sm font-semibold">{label}</span>
+      <span className="text-white/50 text-xs md:text-sm font-semibold">{label}</span>
     </div>
   );
 }
@@ -69,7 +69,7 @@ function CopaContainer({ finalGanador }) {
       <motion.img
         src="/copa.png"
         alt="Copa del Campeonato"
-        className="w-64 h-auto object-contain drop-shadow-[0_0_50px_rgba(255,215,0,0.6)]"
+        className="w-48 md:w-52 lg:w-56 h-auto object-contain drop-shadow-[0_0_50px_rgba(255,215,0,0.6)]"
         animate={finalGanador ? { scale: [1, 1.08, 1] } : {}}
         transition={finalGanador ? { repeat: Infinity, duration: 2.5 } : {}}
       />
@@ -397,7 +397,7 @@ function LadderBracket({ equipos, partidos = [] }) {
       : null);
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-slate-900">
+    <div className="h-screen relative overflow-hidden bg-slate-900">
       {/* Fondo fijo extendido que cubre todo el área scrolleable */}
       <div
         className="fixed inset-0 bg-cover bg-center bg-fixed"
@@ -408,37 +408,41 @@ function LadderBracket({ equipos, partidos = [] }) {
 
       {/* Contenido scrolleable horizontalmente */}
       <div
-        className="relative z-10 overflow-x-auto overflow-y-hidden"
+        className="relative z-10 h-full overflow-x-auto overflow-y-hidden"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
-        <div className="min-w-[900px]">
-          <div className="relative z-10">
+        <div className="min-w-[900px] h-full flex flex-col">
+          {/* Header compacto */}
+          <div className="flex-shrink-0 pt-4 md:pt-5 pb-2">
             <motion.h1
-              className="text-center text-5xl md:text-6xl font-black mb-1 tracking-tight pt-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-blue-500"
+              className="text-center text-3xl md:text-4xl lg:text-5xl font-black mb-0.5 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-blue-500"
               style={{ filter: 'drop-shadow(0 0 15px rgba(34,211,238,0.8))' }}
-              animate={{ y: [-5, 5, -5] }}
+              animate={{ y: [-3, 3, -3] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
             >
               Campeonato Relampago
             </motion.h1>
-            <p className="text-center text-green-200 mb-4 text-lg">
+            <p className="text-center text-green-200 text-sm md:text-base mb-2">
               {isCampal ? 'Doble Eliminacion - Modo Campal' : 'Bracket de Eliminacion'}
             </p>
+          </div>
 
+          {/* Área del bracket - ocupa el espacio restante */}
+          <div className="flex-1 min-h-0">
             {isCampal ? (
-              <div className="w-full h-[calc(100vh-140px)] flex items-center justify-center overflow-hidden">
+              <div className="w-full h-full flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full flex flex-col items-center justify-center transform scale-[0.78] origin-center">
                   <CampalLayout partidos={partidos} equipos={equipos} getEquipo={getEquipo} finalGanador={finalGanador} />
                 </div>
               </div>
             ) : (
-              <div className="flex items-center justify-center min-h-[calc(100vh-140px)] px-6 gap-0">
+              <div className="flex items-center justify-center h-full px-4 gap-0">
                 <div className="bracket-container relative">
                   <Bracket
                     rounds={escalonadoRounds}
                     renderSeedComponent={CustomSeed}
                     roundTitleComponent={(title) => (
-                      <span className="text-xs font-bold text-white/70 uppercase tracking-wider bg-white/10 px-4 py-1.5 rounded-full block text-center mb-4">
+                      <span className="text-xs font-bold text-white/70 uppercase tracking-wider bg-white/10 px-4 py-1.5 rounded-full block text-center mb-3">
                         {title}
                       </span>
                     )}

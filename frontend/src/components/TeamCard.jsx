@@ -8,11 +8,11 @@ function TeamCard({ equipo, esperando = false }) {
 
   if (!equipo) {
     return (
-      <div className="relative w-48 h-64 rounded-2xl overflow-hidden bg-slate-900/60 backdrop-blur-md border-2 border-white/10 flex flex-col items-center justify-center gap-4">
-        <div className="w-24 h-24 rounded-full bg-white/5 flex items-center justify-center">
-          <span className="text-5xl text-white/20 font-bold">⚽</span>
+      <div className="relative w-40 h-52 md:w-44 md:h-56 lg:w-48 lg:h-60 rounded-2xl overflow-hidden bg-slate-900/60 backdrop-blur-md border-2 border-white/10 flex flex-col items-center justify-center gap-4">
+        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/5 flex items-center justify-center">
+          <span className="text-4xl md:text-5xl text-white/20 font-bold">⚽</span>
         </div>
-        <span className="text-white/50 text-sm font-semibold">
+        <span className="text-white/50 text-xs md:text-sm font-semibold">
           Esperando rival...
         </span>
       </div>
@@ -29,7 +29,7 @@ function TeamCard({ equipo, esperando = false }) {
         transition={{ duration: 0.4, ease: 'easeOut' }}
         layout
         onClick={() => setModalOpen(true)}
-        className={`relative w-48 h-64 rounded-2xl overflow-hidden shadow-2xl cursor-pointer group ${
+        className={`relative w-40 h-52 md:w-44 md:h-56 lg:w-48 lg:h-60 rounded-2xl overflow-hidden shadow-2xl cursor-pointer group ${
           esperando ? 'ring-2 ring-amber-400/80' : ''
         }`}
       >
